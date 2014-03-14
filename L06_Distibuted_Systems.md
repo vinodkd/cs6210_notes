@@ -14,3 +14,4 @@ We will be reviewing:
 Todos
 -----
 - Summarize how each is an example for Distributed system at this level.
+- Read up again about Tornado to connect the comment made by Prof about Orjct Tech use there.
