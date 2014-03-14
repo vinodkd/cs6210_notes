@@ -22,7 +22,7 @@ Monolithic kernels are built with state strewn all over the subsystems that make
 
 Thus you get strong interfaces and isloation of state.
 
-![Procedural vs OO design](vlcsnap-00001.png)
+![Procedural vs OO design](ss/vlcsnap-00001.png)
 
 However, what about the border crossing cost? Ans TBD to later.
 
@@ -44,9 +44,9 @@ Issue that Spring saw: Innovate using brand new OS or better implementation of a
 hardware vendors dont change things that often, so software follows suit. Seems like this is a big thing.
 
 
-![Spring system](vlcsnap-00002.png)
+![Spring system](ss/vlcsnap-00002.png)
 
-![Nucleus microkernel](vlcsnap-00003.png)
+![Nucleus microkernel](ss/vlcsnap-00003.png)
 
 Resources used
 ---------------
@@ -54,6 +54,7 @@ Resources used
 1. Vidoes from Udacity, downloaded and watched in 2x speed on VLC
 1. spring.pdf - in required reading.
 1. [Khalidi's paper on Spring MC](https://www.usenix.org/legacy/publications/library/proceedings/sd96/full_papers/khalidi.ps)
+1. Old writeup on Doors: http://www.kohala.com/start/papers.others/doors.html
 1. Hamilton et al's Paper on Subcontracts - in reqd reading.
 1. [Wikipedia page on Spring](http://en.wikipedia.org/wiki/Spring_(operating_system))
 
