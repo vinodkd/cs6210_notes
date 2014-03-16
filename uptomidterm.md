@@ -1,6 +1,29 @@
 CS-6210
 =======
 
+Plan
+----
+- Videos: 
+	Watching 2h 18m
+		   + 0h 46m
+		   + 2h 40m
+		   + 1h 53m
+		   + 5h 34m
+		   + 3h 20m
+		   = 16h 27m
+
+	watch @ 2x speed                        =   16h 27m
+	go back and write notes for same time.  = + 16h 27m
+
+- Papers: 19
+	reading: 1 hr
+	writing comprehension of paper: 1 hr    = + 20h  
+- Quizzes: 36 x 5 mins  = 180 min           = +  3h
+- Research online and piazza: ? hrs
+
+Total estimate                              = ~ 40h by 4/30 ie 7 weekends
+              								= ~ 6h per weekend
+
 L0. Refresher
 -------------
 
