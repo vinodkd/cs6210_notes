@@ -20,7 +20,7 @@ Plan
 - Quizzes: 3 x 5 mins  = 15 min
 - Research online and piazza: ? hrs
 
-Total: 1 hr 33 min per day until all papers done, then 33 mins per day
+Total: 1 hr 33 min per day for 4 days, then 33 mins per day or 2*4 hrs + 5.4hrs (ie 328 mins) = 13.4 hrs 
 
 Todos
 -----
