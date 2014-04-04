@@ -246,3 +246,21 @@ These are cleaned up for:
 	- removal of debug(), fprintf()
 	- added explanatory comments.
 
+**Wed Apr  2 06:50:02 2014** : Wanted to pen down all the issues with the bvt on this one:
+- debug prints are not displayed by default, even to stderr
+  - The way to force it was to fake a system error like a double free(), at which point other debug prints were shown.
+	
+		bvtDebug = 0;	// at start
+		bvtDebug++;		// at the point where one iteration of the test program potentially ends, eg in xx_destroy()
+		if(bvtDebug==SOMEVALUE) {free(alreadyFreedPtr);}
+
+  - however, there was a limit to the output that the bvt would display. if the output went over the limit, it would not show anything at all. Even truncated output would be great.
+  - also, the SOMEVALUE from above was a trial and error. Too less, and the test cases would not be executed. too more and the output would become blank as above. So finding the right value was by multiple trials in 
+- submits on the page did not necessarily save your final input into the text field. so the defensive practice became:
+	- make a change in the textfield
+	- cmd-a, cmd-c it to save it for yourself
+	- reload the page
+	- cmd-v in the change again
+	- hit submit
+
+	
