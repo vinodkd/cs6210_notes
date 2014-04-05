@@ -3,6 +3,77 @@ L09 Internet Computing 1
 Review material
 ---------------
 ### Video content
+
+#### Giant Scale Services
+
+- Questions answered:
+	- what are the issues in managing large data centers?
+	- how do you program big data apps, eg, search engines, to run on massively large clusters?
+	- how to store and disseminate content on the web in a scalable manner?
+- This is what we mean when we say "internet scale computing"
+- How:
+	- we've already learnt how to build distributed systems.
+	- Now we'll see how to harden them for scale in the order of 1000s of processors.
+	- Failures are a given at this scale: Not a question of if, but when.
+- Examples of giant scale services:
+	- Online air reservation
+	- email
+	- web search
+	- watch a streamed movie online
+	- make an online purchase
+- Lesson outline:
+	- System issues in giant scale services
+	- Programming models for apps working on big data
+	- Content distribution networks
+- System issues in giant scale services
+	- Generic model of a GSS: Such a system consists of:
+		![Generic Model of GSS](ss/vlcsnap-00006.png)
+		- A large number of clients accessing the system via a network
+		- The IP network that connects clients to the server
+		- The "server" which actually consists of:
+			- a load manager
+			- 1000s of servers that handle requests
+			- interconnected to one another through a high b/w communication backplane.
+			- 1000s of data stores that the servers are connected to.
+		how it works:
+			- client requests are all independent of each other. This is called "embarassingly parallel".
+				- so all requests can be handled as long as the server has resources.
+			- load manager redirects requests to servers such that no particular server is overloaded.
+			- load manager also handles partial failures. To do this it monitors the servers to shield the clients from specific servers failing.
+			- any of the servers can handle the incoming request.
+			- the data could be replicated or partitioned.
+	- Implementation: Clusters as the workhorses of GSS
+		- Clusters are used to implemente GSS.
+		- circa 2000, there were GSS with 300-5000 nodes and 25M-10B req/day.
+		- now it is 10x-100x those numbers
+		- Each node in the cluster may itself be an SMP
+		- Advantages of cluster:
+			- absolute scalability: can keep adding more resources without re-architecting the system
+			- cost and performance controlled better: since each node is identical to others, maint is easy as is optimizing perf.
+			- independent components, so can easily mix and match generational changes in h/w
+			- incremental scalability: can scale back if required. This is differnent from above where the focus is on not rearchitecting.
+	- How to do load management?
+		- it can be done at any layer in the OSI model above network: IP, tcp, socket, mime, http. The higher the level, the more the functionality of the load manager.
+			- Eg if its at network level, load manager = dns server that gives out different ip addresses to the same domain name; handling load from multiple clients to specific servers. but this cannot hide lower level IP addresses from clients.
+			- Instead if its operating at ip level, ie as level 4 switches (with hot failover), then:
+				- can dynamically islate downstream nodes from outside world
+				- server specific front end nodes. eg, we're dealing with specific kinds of requests.
+				- knows more about semantics of the client-server comm.
+				- can behave based on client characteristics
+	- DQ Principle:
+	![GQ Principle](ss/vlcsnap-00007.png)
+		- Let a GSS have some queries Q that it processes using some Data D. 
+		- Not all requests are handled. Qc are the completed queries and Qo is the offered load.
+			Now Yield Q = Qc/Qo
+		- Each query might require all the data. However, failures or load on server can cause amount data used (Dv) vs Df
+			Now Harvest D = Dv/Df
+		- the product DQ repsents a system limit:
+			- we can increase yield, but reduce harvest or vv.
+
+
+
+
+
 ### Paper Content
 ### Previous Exam questions and answers
 
