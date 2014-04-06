@@ -4,8 +4,6 @@ Review material
 ---------------
 ### Video content
 
-#### Giant Scale Services
-
 - Questions answered:
 	- what are the issues in managing large data centers?
 	- how do you program big data apps, eg, search engines, to run on massively large clusters?
@@ -25,6 +23,9 @@ Review material
 	- System issues in giant scale services
 	- Programming models for apps working on big data
 	- Content distribution networks
+
+#### Giant Scale Services
+
 - System issues in giant scale services
 	- Generic model of a GSS: Such a system consists of:
 		![Generic Model of GSS](ss/vlcsnap-00006.png)
@@ -70,8 +71,26 @@ Review material
 		- the product DQ repsents a system limit:
 			- we can increase yield, but reduce harvest or vv.
 
+#### Map Reduce
 
-
+#### Content Delivery Networks
+- Who started and why?
+	- Napster, for music sharing
+- Basic idea:
+	- we need to store content so that it can be accessed over a WAN
+	- storing it centrally is not the best way, so we should distribute it so that anyone can find it.
+- design questions:
+	- how to name it so its universally unique? Ans: use a content hash instead of textual name
+	- how to make it finable? Ans: put it in a map with the content hash as key and node id where content is available as value. 
+	- where to store the <k,v> pair so it can be found easily? Ans: find a node who's id is the same or close enough to the content hash so when someone else looks for a specific content, they can generate the content hash and find the node id where the content actually is. This is a distributed hash table.
+	![cdn basic idea](ss/vlcsnap-cdn1.png)
+- details:
+	![cdn details](ss/vlcsnap-cdn2.png)
+	- key name space: content hash using some algo like SHA1 to create 160 bit key
+	- value name space: hash of ip address using same algo to create 160 bit key
+	- Objective: store key in a node such that k ~ N.
+	- api: putkey, getkey
+- next problem: getKey(hash) still gives only the hashed ip address, how to find the actual ip address and reach it?
 
 
 ### Paper Content
