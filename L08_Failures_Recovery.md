@@ -34,3 +34,4 @@ Todos
 
 Journal
 -------
+**Sun Apr  6 06:35:29 2014** : Watching RVM videos now to understand the RVM assignment.

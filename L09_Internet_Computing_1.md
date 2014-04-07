@@ -1,3 +1,5 @@
+[TOC]
+
 L09 Internet Computing 1
 ========================
 Review material
@@ -198,3 +200,6 @@ Journal
 **Fri Apr  4 01:30:53 2014** : Started watching videos this evening.
 **Fri Apr  4 01:42:37 2014** : Looking at previous exams now.
 **Fri Apr  4 01:55:19 2014** : Did a quick persual of the Map reduce paper. Need to go look at the details but it is as i remembered it from before. Also looked at the Coral paper. Need to read that paper fully, esp about Distributed Sloppy Hash table.
+
+**Sun Apr  6 06:34:20 2014** : Finished watching the cdn videos and read the coral paper a little bit more in detail. Still need to read it thoroughly and create notes for it. Also still need to create notes for the latter half of the cdn videos as well as the MR videos.
+
