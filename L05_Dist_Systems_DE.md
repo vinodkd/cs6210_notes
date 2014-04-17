@@ -143,8 +143,9 @@ Active Networks:
 ### Exam Questions
 
 1. (4 points) The idea of Active Networks is to “customize” network service to packets flowing through routers. Mention two pitfalls with this idea.
- Protection: can one service damage another (either intentionally or unintentionally)
- Resource management: can one service consume arbitrary amount of resources (e.g., network bandwidth) to the detriment of others
+
+* Protection: can one service damage another (either intentionally or unintentionally)
+* Resource management: can one service consume arbitrary amount of resources (e.g., network bandwidth) to the detriment of others
 (+2 for each of the above points;
 If other points raised then points based on validity of the points)
 
@@ -196,13 +197,13 @@ System from Components:
 ### Exam Questions
 
 1. (3 points) This is in the context of Ensemble/NuPrl approach to combining theory and practice to synthesize communication protocol stacks. Mention two points that capture the goals of this approach.
- Decouple specification, verification, and implementation from one another
- Design, test, optimize individual components (this is the practice part
+* Decouple specification, verification, and implementation from one another
+* Design, test, optimize individual components (this is the practice part
       achieved via Ensemble)
- Use theoretical framework (achieved via IOA) to go from specification to
+* Use theoretical framework (achieved via IOA) to go from specification to
 synthesizing an un-optimized stack consisting of the components provided by
 Ensemble
- Use theoretical framework (NuPrl) to optimize the stack
+* Use theoretical framework (NuPrl) to optimize the stack
 (+3 if any two of the above points mentioned;
 If other points raised then points based on the validity of the points)
 
