@@ -147,6 +147,8 @@ EJB
 	![ch2](ss/vlcsnap-ejb4.png)
 	- Choice 3: (UI on web) + (session facade, biz logic, entity on app)
 	![ch3](ss/vlcsnap-ejb5.png)
+- Key takeaway from OS pov: The power of object technology in structuring complex systems and reusing code. ejb allowed developers to write complex apps without worrying about x-cutting concerns such as security, logging, persistence etc.
+- hw: understand qualitatively the impact of the 3 design choices on performance, pooling of resources, number of objects, etc.
 
 ### Papers
 
