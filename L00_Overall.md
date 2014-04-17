@@ -40,3 +40,36 @@ Optional Tasks:
 
 Todo:
 - Estimate time to review exam questions
+
+Journal
+-------
+
+**Mar-13-2014 08:52 :** Some thoughts on note taking:
+- in a blank md file, start with h1 lecture title, h2 resources, h2 todos, h2 plan and h2 journal
+- log start of lecture in journal
+- update resources list
+	- add videos to resource list
+	- find all papers that may apply and add to resource list
+	- find all piazza comments related to this topic and add to resource list (assuming you're late for this lecture in pacing)
+
+- update plan
+	- put estimate for video watching (based on duration reported in udacity wiki)
+	- put estimate for paper reading
+	- put estimate for quiz answering online
+	- put estimate for question and answers - online and on piazza.
+	- put estimate for note consolidation
+	- ... and therefore total estimate of hours required.
+- watch the videos	
+	- Create h2 section for each main topic in video
+	- watch video once without break
+	- watch video again with breaks
+	- write notes with timestamps for important notes
+	- write answers to quizzes in line
+	- organize notes into coherent set of bullets
+	- review notes for all topics in lecture to date.
+- read the papers
+	- create h2 section for each paper
+	- read paper once without break
+	- write down why this paper is pertinent.
+	- 
+-
