@@ -1,6 +1,8 @@
  L06 Distributed Objects and Middleware
 ======================================
 
+**LOTS OF GAPS IN SPRING SYSTEM VIDEOS AND PAPER. DO THIS AGAIN. STILL CANNOT ANSWER EXAM QN**
+
 Spring Operating System
 -----------------------
 
@@ -151,6 +153,8 @@ EJB
 - hw: understand qualitatively the impact of the 3 design choices on performance, pooling of resources, number of objects, etc.
 
 ### Papers
+
+6.4.02-Cecchet-OOPSLA.pdf
 
 ### Exam Qns
 
